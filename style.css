@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #E5E5E5;
+}
+
+/*Criando um elemento HTML utilizando CSS, antes do body*/
+body::before {
+  content: '';
+  width: 100%;
+  height: 436px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #535971;
+
+
+}
+
+.page {
+  width: 750px;
+  margin: auto; /*esse margin esta deixando tudo alinhado ao centro da pagina*/
+}
+
+header {
+  width: 417px;
+  margin-top: 140px;
+  margin-bottom: 58px;
+}
+
+header h1 {
+  font-family: 'Staatliches', cursive;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 48px;
+  
+}
+
+header p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 18px;
+  
+
+  
+
+  color: #FFFFFF;
+}
+
+
+form {
+  width: 750px;
+  height: 1084px;
+  left: 345px;
+  top: 320px;
+
+  padding: 64px;
+
+  background: #FFFFFF;
+  border-radius: 20px 20px 0px 0px;
+}
+
+span {
+  
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  
+
+
+  color: #C1BCCC;
+}
+
+span:hover {
+  color: #67646b;
+}
+
+
+
+fieldset {
+  border: none;
+}
+
+fieldset legend {
+  
+  font-family: 'Staatliches', cursive;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+
+
+
+  color: #535971;
+
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #E6E6F0; /*linha*/
+
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Informaçoes pessoais ----------------------------------------------------*/
+.nome-sobrenome{
+  display: flex;
+  gap: 22px;
+  
+}
+
+.nome-sobrenome label {
+  margin-top: 36px;
+}
+
+.nome-sobrenome input {
+  width: 300px;
+  height: 56px; 
+
+  background: #FAFAFC;
+
+  margin-top: 8px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+.email-senha label {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.email-senha input {
+  height: 56px;
+
+  background: #FAFAFC;
+
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+/*Mentor -------------------------------------------------------------------*/
+#info-mentor legend {
+  margin-top: 30px;
+  
+}
+
+#info-mentor label {
+  margin-top: 32px;
+}
+
+#info-mentor input {
+  height: 56px;
+
+
+  background: #FAFAFC;
+
+  margin-top: 8px;
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+}
+
+
+/*Horários Disponível -------------------------------------------------------*/
+
+#horarios-disponiveis legend {
+  margin-top: 32px;
+}
+
+#horarios-disponiveis h2 {
+  font-family: 'Staatliches', cursive; 
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  margin-top: 32px;
+
+
+  color: #535971;
+  
+}
+
+#horarios-disponiveis label {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+#horarios-disponiveis input {
+  margin-top: 8px;
+}
+
+.data-horario {
+  display: flex;
+
+}
+
+.data {
+  width: 300px;
+  height: 56px;
+
+  background: #FAFAFC;
+
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+  margin-right: 32px;
+
+  font-size: 16px;
+  padding: 25px;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.horario {
+  width: 140px;
+  height: 56px;
+
+  background: #FAFAFC;
+  
+  border: 1px solid #E6E6F0;
+  border-radius: 8px;
+
+  margin-right: 10px;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+} 
+
+footer {
+  display: flex;
+  flex-direction: column;
+
+  width: 750px;
+  
+  
+  padding: 52px 71px;
+
+  margin-bottom: 100px;
+
+  background: #535971;
+  border-radius: 0px 0px 20px 20px;
+
+  border: none;
+}
+
+
+
+footer .button {
+  height: 55px;
+  border-radius: 20px;
+  border: none;
+  background: #FF5374;
+  font-family: 'Staatliches';
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+footer .button:hover {
+  background: #be314d;
+}
+
+footer .button:focus {
+  background: #be314d;
+}
